@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RemindMe</title>
+    <style>
+      /* The popup has a tiny default size, so we set a sensible width. */
+      body {
+        width: 260px;
+        margin: 0;
+        padding: 16px;
+        font-family: system-ui, sans-serif;
+        background: #1f2937;
+        color: #f9fafb;
+      }
+      h1 {
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+      #status {
+        font-size: 13px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RemindMe</h1>
+    <p id="status">Loading…</p>
+
+    <!-- This <script> is our popup's brain. type="module" lets it use imports.
+         Vite/crx will compile popup.ts into JavaScript for us. -->
+    <script type="module" src="./popup.ts"></script>
+  </body>
+</html>

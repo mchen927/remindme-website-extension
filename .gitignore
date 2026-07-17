@@ -1,0 +1,13 @@
+# Dependencies installed by npm — huge, and reproducible from package.json
+node_modules/
+
+# The compiled extension that Vite generates — we load this into Chrome,
+# but we never commit it because it's a build artifact.
+dist/
+
+# Vite's cache
+.vite/
+
+# OS / editor noise
+.DS_Store
+*.log

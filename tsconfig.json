@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // Compile to modern JavaScript. Chrome is always up to date, so we can
+    // target a recent version without worrying about old browsers.
+    "target": "ES2020",
+    "module": "ESNext",
+
+    // "bundler" tells TypeScript that Vite handles module resolution,
+    // so we can import files the way Vite expects.
+    "moduleResolution": "bundler",
+
+    // Turn on ALL of TypeScript's safety checks. As a learner this is your
+    // friend — it catches mistakes before Chrome ever runs the code.
+    "strict": true,
+
+    // Don't type-check inside third-party libraries — just our own code.
+    "skipLibCheck": true,
+
+    // Make the `chrome.*` API and Vite's helpers known to TypeScript.
+    "types": ["chrome", "vite/client"],
+
+    // The browser globals we're allowed to use (document, window, etc.).
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // TypeScript only checks types; Vite does the actual building.
+    "noEmit": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "vite.config.ts"]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "remindme-website-extension",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Sticky-note reminders and nudges that appear on the websites you choose.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
